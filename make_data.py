@@ -22,9 +22,9 @@ class save_dataset(torch.utils.data.Dataset):
   def __len__(self):
     return len(self.dataset)
 
-trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=None)
+trainset = torchvision.datasets.CIFAR100(root='./data', train=True, download=True, transform=None)
 
-testset = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=None)
+testset = torchvision.datasets.CIFAR100(root='./data', train=False, download=True, transform=None)
 
 train_dataset = save_dataset(trainset, split='train')
 test_dataset = save_dataset(testset, split='test')
