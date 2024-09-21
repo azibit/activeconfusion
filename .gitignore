@@ -1,0 +1,11 @@
+*.txt
+*.png
+
+/checkpoint
+/checkpoint1
+/checkpoint_int
+/backup
+/__pycache__
+/loss
+/DATA
+/models/__pycache__
